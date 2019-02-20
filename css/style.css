@@ -41,13 +41,7 @@ section{
 a:focus{
 	outline: 0;
 }
-a{
-	color: #fff;
-}
 
-a.read-more:hover{
-	color: #09C3E7;
-}
 ul,li{
 	list-style: none;
 }
@@ -72,7 +66,6 @@ h1, h2, h3, h4, h5, h6 {
 h2.heading-title{
 	margin-bottom: 50px;
 	font-weight: 700;
-	color:#fff;
 }
 .website-list:hover .h4{
 	color:#c80a48 ;
@@ -91,52 +84,20 @@ h2.heading-title{
     background-image: url('../images/bg-pattern.png');
     background-repeat: repeat;
 }
+/*网站2018*/
+#section-website,.section-applet{
+	 background: #fff;
+}
+/*网站2017*/
+#section-website-two,.section-app{
+	 background: #f7f7f7;
+}
+   
 
-/*Button styles
-=============================================*/
-.btn-default{
-	font-size: 18px;
-	line-height: 24px;
-	padding: 20px 19px;
-	border: 1px solid#C30D49;
-	text-transform: uppercase;
-	border-radius: 0px;
-	font-weight: 700;
-	background: #c80a48;
-	color: #fff;
-	-webkit-transition: all .4s ease-in 0s;
-	-o-transition: all .4s ease-in 0s;
-	transition: all .4s ease-in 0s;
-}
-.btn-default.featured{
-	font-size: 18px;
-	line-height: 24px;
-	padding: 20px 19px;
-	text-transform: uppercase;
-	border-radius: 0px;
-	font-weight: 700;
-	background: #c80a48;
-	color: #fff;
-	margin-top: 50px;
-	-webkit-transition: all .4s ease-in 0s;
-	-o-transition: all .4s ease-in 0s;
-	transition: all .4s ease-in 0s;
-}
-.btn-default:hover{
-	background: #fff;
-	color: #066FA9;
-	border-color: #fff;
-}
-.btn-default.featured:hover{
-	background: #DA1757;
-	color: #fff;
-	border-color: #E61D5F;
-}
-.tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*Global styles
 ==============================================*/
 .section-padding{
-	padding: 100px 0px;
+	padding: 60px 0px;
 }
 p{
 	color: #929292;
@@ -152,50 +113,13 @@ p{
   Banner styles
 ================================================*/
 
-#section-banner{
-	background: url("../images/banner.jpg") ;
-	background-size: cover;
-}
-.banner-content{
-	padding: 250px 0px 300px 0px;
-	position: relative;
-	z-index: 3;
-	text-align: right;
+.carousel,
+.carousel .item {
+	height: 600px;
 }
 
-h2.title{
-	font-size: 57px;
-	line-height: 72px;
-	color: #fff;
-	font-weight: 600;
-	text-transform: capitalize;
-}
-h2.title span{
-	font-size: 32px;
-	line-height: 60px;
-	color: #fff;
-	text-transform: capitalize;
-	/* width: 243px; */
-	display: block;
-	padding: 0;
-	font-weight: normal;
-}
-.line-top{
-	width: 930px;
-	color: #fff;
-	background: #fff;
-	height: 2px;
-	margin: 32px auto;
-}
-.line-btm{
-	width: 930px;
-	color: #fff;
-	background: #fff;
-	height: 2px;
-	margin: 32px auto;
-}
-.banner-content a.btn-default {
-	padding: 15px 36px!important;
+.carousel .item img {
+	width: 100%;
 }
 
 
@@ -231,10 +155,6 @@ h2.title span{
 	background: #c80a48;
 	border: 0px;
 	border-radius: 0px;
-}
-.navbar-nav {}
-.navbar-nav li{
-	/*padding-right: 40px;*/
 }
 .navbar-default .navbar-nav > li > a{
 	font-weight: 400;
@@ -275,27 +195,8 @@ h2.title span{
 
 
 /*==================================================
-	section-overview
+	关于我
 =====================================================*/
-
-#section-overview{
-	padding: 75px 0px 80px;
-}
-.overview-box{}
-.overview-box h3{
-	margin-bottom: 35px;
-}
-
-
-/*==================================================
-	section-profile
-=====================================================*/
-#section-skill .btn-default.featured{
-	padding: 15px 36px!important;
-}
-#section-profile{
-	background: #232323;
-}
 
 .profile-bg {
     background-color: transparent;
@@ -360,102 +261,6 @@ h2.title span{
 	padding-top: 0px;
 }
 
-
-/*section-resume
-==========================================*/
-
-#section-resume{
-	background: #232323;
-	position: relative;
-}
-#section-resume:after{
-	position: absolute;
-	content:"";
-	width: 60px;
-	height: 60px;
-	background: #0C0A09;
-	bottom: -25px;
-	left: 48%;
-	border-radius: 50%;
-}
-
-.resume-inner{}
-.resume-inner{
-	width: 95%;
-}
-.resume-desc{
-	margin-top: -12px;
-}
-.resume-box{
-	margin-bottom: 80px;
-}
-.resume-title{
-
-}
-.resume-box.last{
-	margin-bottom: 0px;
-}
-.resume-sub{
-	margin:-3px 0px 12px;
-}
-.result,.year{
-	background: #09C3E7;
-	color: #fff;
-	padding: 9px 12px;
-	display: inline-block;
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-.result{
-	text-transform: uppercase;
-}
-.year{
-	text-transform: capitalize;
-}
-
-
-
-
-/*Section-testimonial 
-==================================================*/
-#section-testimonial{
-	background: #232323;
-	padding-bottom: 105px;
-}
-.carousel-indicators li {
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-}
-.carousel-indicators {
-    bottom: -25px;
-}
-.carousel-indicators .active {
-    background-color: #c80a48;
-}
-.carousel-indicators li {
-    border-color: #c80a48;
-}
-
-
-#testimonial-carousel{
-	width: 63%;
-	margin: 0 auto;
-	margin-top: -10px;
-}
-#testimonial-carousel p{
-	color: #919191;
-	font-style: italic;
-	margin-bottom: 40px;
-}
-
-.client-name{
-	color: #566366;
-	text-transform: uppercase;
-	margin-bottom: 50px;
-}
-
-
 /*====================================================
 	section-portfolio
 ====================================================*/
@@ -491,71 +296,6 @@ h2.title span{
 	opacity: 1;
 }
 
-
-/*SECTION contact
-=================================================*/
-
-#section-contact{
-	background: #c80a48;
-}
-#section-contact .heading-title{
-	color: #fff;
-}
-.contact-left{
-	padding-top: 30px;
-}
-.contact-left p{
-	color: #F3F3F3;
-	font-size: 16px;
-	line-height: 30px;
-}
-
-.contact-left h2{
-	color: #fff;
-}
-.location{
-	margin: 45px 0px;
-}
-.contact-left ul{
-	margin-left: -40px;
-}
-.contact-left ul li a{
-	color: #E0E0E0;
-	margin-left: 40px;
-}
-.contact-left ul li span{
-	color: #fff;
-	
-}
-
-.contact-box{
-	margin-bottom: 40px;
-}
-.contact-box .form-group{
-	margin-bottom: 39px;
-}
-.contact-box label{
-	color: #fff;
-	margin-bottom: 20px;
-	font-size: 18px;
-}
-
-.contact-box .form-control{
-	height: 50px;
-	border-radius: 0px;
-	background: transparent;
-	border: 0px;
-	border: 1px solid #FFFFFF;
-	color: #B9D0E1;
-}
-.contact-form .btn-default{
-	
-background: #FFFFFF;
-	
-border: 0px;
-	
-color: #C80A48;
-}
 
 
 img {
@@ -925,7 +665,18 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 
 /* Small Devices Potrait */
 @media (max-width : 767px){
-
+.carousel {
+		height: 300px;
+	}
+	.carousel .item {
+		height: 300px;
+	}
+	.carousel img {
+		min-height: 300px;
+	}
+	.section-padding{
+	padding: 20px 0px;
+}
 	
 }
 
