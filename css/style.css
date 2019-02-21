@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*网站*/
 h2.heading-title{
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	font-weight: 700;
 }
 .website-list:hover .h4{
@@ -86,7 +86,6 @@ h2.heading-title{
 }
 .navbar-default .navbar-toggle{
 	border-color: transparent;
-	margin-right: 15px;;
 }
 /*网站2018*/
 #section-website,#section-applet{
@@ -159,7 +158,7 @@ p{
 }
 .navbar-default .navbar-nav > li > a{
 	font-weight: 400;
-	padding: 0px 20px;
+	padding: 14px 20px;
 	font-size: 18px;
 	font-family: 'Roboto', serif;
 }
@@ -588,12 +587,12 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 	============================================================*/
 
 	#section-footer{
-		background: #232323;
-		padding: 50px 0px;
+		background: #131313;
+		padding: 10px 0px;
+		display: flex;align-items: center;
 	}
 	#section-footer h4{
-		color: #c80a48;
-		margin-top: 30px;
+		color: #fff;
 	}
 
 .socail-link{}
@@ -696,10 +695,6 @@ background-color: #232323;            border: dashed 1px #4A4A4A;border-radius: 
 	.profile-desc {
    	 padding-left: 10px;
 	}
-	.service-wrapper {
-   	 padding-left: 20px;
-	}
-
 	.service-inner {
 	    width: 100%;
 	}
