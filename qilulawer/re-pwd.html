@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>找回密码--齐鲁律师事务所</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--通栏-->
+<div class="out">
+  <div class="top">
+  <div class="l_float"><span>欢迎光临齐鲁律师事务所资本市场联盟！</span></div>
+   <div class="top_r r_float"><a href="login.html" target="_blank">会员登录</a>|<span>还没账号？马上</span><a href="huiyuan-sq.html" target="_blank">申请</a></div>
+  </div>
+  <!--logo-->
+  <div class="logo"> <img src="images/logo.png">
+    <div class="logo-r r_float"><img src="images/tel.png"></div>
+  </div>
+  
+  <!--main-->
+  <div class="login">
+    <div class="login_wid">
+      <h1>找回密码</h1>
+      <form class="login-f" action="" id="" name="form1" method="post">
+        <label class="user com_bg">公司名称</label>
+        <input type="text"  class="text01" name="company" placeholder="请输入公司名称"/>
+        <label class="user tel_bg">电　　话</label>
+        <input type="tel" class="text01" name="tel" placeholder="请输入电话号码"/>
+        <label class="user mail_bg">邮　　箱</label>
+        <input type="email" class="text01" name="email" placeholder="请输入邮箱"/>
+        <input type="button" class="butl" value="确认" onClick="return CheckBd();">
+      </form>
+    </div>
+    <script LANGUAGE="JavaScript">
+function CheckBd()
+{
+if (form1.company.value=="") {alert("请输入公司名称!");form1.company.focus();return false;}
+if (form1.tel.value=="") {alert("请输入电话!");form1.tel.focus();return false;}
+if (form1.email.value=="") {alert("请输入邮箱!");form1.email.focus();return false;}
+}
+</script>
+  </div>
+  <div class="clear"></div>
+  <!--底部信息-->
+ <div class="foot"> <span>齐鲁律师事务所　版权所有　Copyright&copy;2017　All Rights Reserved　<a href="www.miibeian.gov.cn">鲁ICP备09072299号</a>　技术支持：<a href="http://www.jnyunchang.com">云畅网络</a> </span></div>
+</div>
+</body>
+</html>

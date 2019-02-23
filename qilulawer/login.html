@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录--齐鲁律师事务所</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--通栏-->
+<div class="out">
+  <div class="top">
+  <div class="l_float"><span>欢迎光临齐鲁律师事务所资本市场联盟！</span></div>
+    <div class="top_r r_float"><a href="login.html" target="_blank">会员登录</a>|<span>还没账号？马上</span><a href="huiyuan-sq.html" target="_blank">申请</a></div>
+  </div>
+  <!--logo-->
+  <div class="logo"> <img src="images/logo.png">
+    <div class="logo-r r_float"><img src="images/tel.png"></div>
+  </div>
+  <!--main-->
+  <div class="login">
+    <div class="login_wid">
+      <h1>账号登录</h1>
+      <form class="login-f" action="" id="" name="form1" method="post">
+        <label class="user user_bg">用户名</label>
+        <input type="text" class="text01" id="" name="username" size="20" maxlength="50" placeholder="请输入用户名"/>
+        <label class="user psd_bg">密　码</label>
+        <input type="password" class="text01" id="" name="password" size="20" maxlength="50" placeholder="请输入密码"/>
+        <input type="button"  class="butl" value="登录" onClick="return CheckBd();">
+        <a href="re-pwd.html">忘记密码？</a>
+      </form>
+    </div>
+    <script LANGUAGE="JavaScript">
+function CheckBd()
+{
+if (form1.username.value=="") {alert("请输入用户名!");form1.username.focus();return false;}
+if (form1.password.value=="") {alert("请输入密码!");form1.password.focus();return false;}
+}
+</script>
+  </div>
+  <div class="clear"></div>
+  <!--底部信息-->
+ <div class="foot"> <span>齐鲁律师事务所　版权所有　Copyright&copy;2017　All Rights Reserved　<a href="www.miibeian.gov.cn">鲁ICP备09072299号</a>　技术支持：<a href="http://www.jnyunchang.com">云畅网络</a> </span></div>
+</div>
+</body>
+</html>

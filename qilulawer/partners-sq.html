@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>合作伙伴申请--齐鲁律师事务所</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--左侧导航所需js文件-->
+<script src="js/icon.js" type="text/javascript"></script>
+<!--用户协议所需js文件-->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+<script LANGUAGE="JavaScript">
+function CheckAdd()
+{
+if (login.P_UserName.value=="") {alert("请输入您的公司名称!");login.P_UserName.focus();return false;}
+if (login.P_UserName1.value=="") {alert("请输入姓名!");login.P_UserName1.focus();return false;}
+if (login.tel.value=="") {alert("请输入常用手机!");login.tel.focus();return false;}
+if (login.mail.value=="") {alert("请输入常用邮箱!");login.mail.focus();return false;}
+if (login.qqmail.value=="") {alert("请输入qq号码!");login.qqmail.focus();return false;}
+if (login.weixin.value=="") {alert("请输入微信账号!");login.weixin.focus();return false;}
+if (login.dizhi.value=="") {alert("请输入所在地址!");login.dizhi.focus();return false;}
+if (login.fuwu.value=="") {alert("请输入可以在资本市场联盟中提供的服务项目!");login.fuwu.focus();return false;}
+if (login.zyyw.value=="") {alert("请输入公司主营业务!");login.zyyw.focus();return false;}
+if (login.tuijianr.value=="") {alert("请输入推荐人姓名!");login.tuijianr.focus();return false;}
+}
+</script> 
+</head>
+<body>
+<!--通栏-->
+<div class="out">
+  <div class="top">
+  <div class="l_float"><span>欢迎光临齐鲁律师事务所资本市场联盟！</span></div>
+    <div class="top_r r_float"><a href="login.html" target="_blank">会员登录</a>|<span>还没账号？马上</span><a href="huiyuan-sq.html" target="_blank">申请</a></div>
+  </div>
+  <!--logo-->
+  <div class="logo"> <img src="images/logo.png">
+    <div class="logo-r r_float"><img src="images/tel.png"></div>
+  </div>
+  <!--main-->
+  <div style="background:url(images/bg.png) no-repeat; height:240px; width:100%; margin-top:10px; margin-bottom:30px;"></div>
+  <div class="main-l l_float">
+    <ul id="out">
+        <li onClick="window.location.href='intro.html'"><div class="icon"><img src="images/icon_lmpt.png"></div><span>市场联盟介绍</span></li>
+        <li onClick="window.location.href='partners-zs.html'"><div class="icon"><img src="images/icon_hzhb.png"></div>合作伙伴展示</li>
+        <li onClick="window.location.href='requre-sq1.html'"><div class="icon"><img src="images/icon_hzhbsq.png"></div>合作伙伴申请</li>
+        <li onClick="window.location.href='#'"><div class="icon"><img src="images/icon_hyzs.png"></div>会员展示</li>
+        <li onClick="window.location.href='huiyuan-sq.html'"><div class="icon"><img src="images/icon_hysq.png"></div>会员申请</li>
+        <li onClick="window.location.href='requir-sq1.html'"><div class="icon"><img src="images/icon_xqsq.png"></div>需求申请</li>
+        <li onClick="window.location.href='resources.html'"><div class="icon"><img src="images/icon_zydj.png"></div>资源对接</li>
+        <li onClick="window.location.href='contact.html'"><div class="icon"><img src="images/icon_lxfs.png"></div>联系方式</li>
+      </ul>
+     </div>
+  <div class="main-r r_float">
+    <div class="weizhi"> <span>您当前所在位置：<a href="" title="首页">首页</a> > <a href="" title="合作伙伴申请">合作伙伴申请</a></span> </div>
+    <form class="shenqing" action="" id="login" name="login" method="post">
+      <label class="user01"><span>*</span>公司名称</label>
+      <input type="text"  class="text02" placeholder="请输入您的公司名称" id="uid" name="P_UserName" value="" autocomplete="false"/>
+      <div class="hzsq">
+        <p><span>*</span>您已经是会员，请先<a href="">登录</a></p>
+      </div>
+      <label class="user01"><span></span>官方网站地址</label>
+      <input type="text" id="guanfwz"  placeholder="请输入网址"/>
+      <label class="user01"><span></span>企业logo</label>
+      <div class="file-box">
+        <input type='button' class='btn' value='点击此处上传logo' />
+        <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+        <p>logo上传后将显示在会员展示页面</p>
+      </div>
+      <label class="user01"><span>*</span>申请人</label>
+      <input type="text" placeholder="请输入姓名" id="uidxm" name="P_UserName1" value="" autocomplete="false"/>
+      <label class="user01"><span>*</span>电话</label>
+      <input type="tel" placeholder="建议使用常用手机" id="tel" name="tel" value="" autocomplete="false"/>
+      <label class="user01"><span>*</span>邮箱</label>
+      <input type="email" placeholder="建议使用常用邮箱" id="mail" name="mail" value="" autocomplete="false"/>
+      <label class="user01"><span>*</span>qq</label>
+      <input type="text"   placeholder="请输入qq号" id="qqmail" name="qqmail" value="" autocomplete="false" />
+      <label class="user01"><span>*</span>微信</label>
+      <input type="text" placeholder="请输入微信账号" id="weixin" name="weixin" value="" autocomplete="false"/>
+      <label class="user01"><span>*</span>地址</label>
+      <input type="text" placeholder="请输入所在地址" id="dizhi" name="dizhi" value="" autocomplete="false"/>
+      <label class="user03"><span>*</span>可提供的服务</label>
+     
+      <textarea class="text03" placeholder="可以在资本市场联盟中提供的服务项目，便于平台推荐" id="fuwu"  name="fuwu" value="" autocomplete="false"/></textarea>
+      </textarea>
+      <label class="user01"><span>*</span>推荐人</label>
+      <input type="text"  placeholder="请输入推荐人姓名" id="tuijianr"  name="tuijianr" value="" autocomplete="false"/>
+      <div class="check_answer" style="display:none">
+        <label class="user03"><span>*</span>公司主营业务</label>
+        <textarea class="text03" placeholder="公司的主营业务和公司生产的主要产品或提供的主要服务，便于为公司提供更优质的合作伙伴" id="zyyw"  name="zyyw" value="" autocomplete="false"/></textarea>
+        </textarea>
+      </div>
+<!--      <div class="matter_answer" style="display:none">您还没有同意服务协议</div>
+-->     <div class="matter_ask">
+      <input type="checkbox" name="man" checked>我已阅读并同意<a href="javascript:void(0);" id="showxieyi">《会员申请协议》</a></div>
+      <div class="check_ask">
+        <input type="checkbox"></div><div class="check_askcon">
+        同时申请为合作伙伴身份 <span style="padding-right:0;">*</span>为必填选项</div>
+      <div class="check_b"> <span style="padding-right:0;">*</span>公司名称是默认登录用户名，手机号后六位是默认登录密码</div>
+      <input value="提交" type="submit" class="subm" onClick="return CheckAdd();">
+    </form>
+  </div>
+      <script type="text/javascript">
+	$(document).ready(function() {
+		$(".check_ask").click(function(){
+			$("div").prev(".check_answer").slideToggle("fast");
+	});
+});
+	/*$(document).ready(function() {
+		$(".matter_ask").click(function(){
+			$("div").prev(".matter_answer").slideToggle("fast");
+	});
+});*/
+</script> 
+ <div class="xieyi" id="xieyi" style="display:none;">
+<h2>会员申请协议</h2>
+<div style="padding:15px; height:450px; overflow:auto">
+<p>齐鲁律师事务所力求内容的可靠、准确和完整，但并不从客观上确保所载信息和材料的准确性、可靠性或完整性，并明确否认就该等信息和材料的错误或遗漏承担责任；也不对信息和材料做出任何种类的保证，包括但不限于有关没有侵犯第三方权利、所有权、内容令人满意、适合特定的用途或没有计算机病毒的保证。这些材料也许已经过期，本网站不承诺对其更新。凡在本网站出现的信息，包括但不限于新闻、公告、评论、预测、图表、指标、直接的或暗示的指示，均仅供参考，注册用户和一般页面游览者在使用前请进一步核实，并对任何自主决定的行为负责。</p>
+<p>本网站所刊发的证券、期货、外汇市场评述和预测等各类信息，并不构成对任何金融产品的购买、认购、抛售或持有的邀约或建议，使用者或投资者据此进行的金融证券期货等投资行为所造成的盈余或亏损概与本网站无关。本网站对上述任何损害概不负责。
+</p>
+<p> 如果本网站刊登的任何内容与您的著作权存在冲突，请立即联系本网站，本网站将予以及时处理。</p>
+<p>使用者了解并同意，本网站可能因政府禁令、现行法律法规的变更、火灾、地震、动乱、战争、停电、合作方或相关电信部门的互联网软硬件设备故障或失灵、或其人为工作疏忽而全部或部分中断、延误、遗漏，或造成资料和行情传输或储存上的错误，或遭第三者侵入系统篡改或伪造变更资料等，本网站对此不承担任何责任。</p>
+<p>凡通过本网站与其它网站的链接，而获得其它网站所提供的网上资料及信息，使用者应该自行辨别及判断，本网站不承担任何责任。在任何情况下，本网站对于与使用或未能使用本网站或任何链接的网站的内容、资料、功能有关的任何直接的、间接的、特殊的、连带的或其它损失（包括但不限于任何利润损失、业务中断以及您的信息处理系统中的信息、程序或其它数据的丢失）不向任何机构承担责任，即使本网站被明确告知此类损失的可能性。</p><p>请注意保存好您的个人信息，并关注下述安全提示。如因您的过失导致个人信息泄露并造成的损失，将由您个人承担</p>
+<p>使用者了解并同意，本网站可能因政府禁令、现行法律法规的变更、火灾、地震、动乱、战争、停电、合作方或相关电信部门的互联网软硬件设备故障或失灵、或其人为工作疏忽而全部或部分中断、延误、遗漏，或造成资料和行情传输或储存上的错误，或遭第三者侵入系统篡改或伪造变更资料等，本网站对此不承担任何责任。</p>
+<p>凡通过本网站与其它网站的链接，而获得其它网站所提供的网上资料及信息，使用者应该自行辨别及判断，本网站不承担任何责任。在任何情况下，本网站对于与使用或未能使用本网站或任何链接的网站的内容、资料、功能有关的任何直接的、间接的、特殊的、连带的或其它损失（包括但不限于任何利润损失、业务中断以及您的信息处理系统中的信息、程序或其它数据的丢失）不向任何机构承担责任，即使本网站被明确告知此类损失的可能性。</p><p>请注意保存好您的个人信息，并关注下述安全提示。如因您的过失导致个人信息泄露并造成的损失，将由您个人承担</p>
+</div>
+    <div class="tyzc_btn">
+    	<a href="javascript:void(0);" id="tyzc_close">同意并继续注册</a>
+    </div>
+    </div>
+    
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#showxieyi").click(function(){
+  $("#xieyi").fadeIn();
+  });
+   $("#showxieyi").click(function(){
+  $('input').attr('disabled', true)//将input元素设置为disabled
+  });
+  $("#showxieyi").click(function(){
+  $('.subm').attr('disabled',true)//将subm元素设置为disabled
+  });
+   $("#showxieyi").click(function(){
+  $('textarea').attr('disabled',true)//将textarea元素设置为disabled
+  });
+  
+  
+  $("#tyzc_close").click(function(){
+  $("#xieyi").fadeOut();
+  });
+  $("#tyzc_close").click(function(){
+  　$('textarea').removeAttr("disabled");//去除textarea元素的disabled属性
+  });
+  $("#tyzc_close").click(function(){
+  　$('.subm').removeAttr("disabled");//去除subm元素的disabled属性
+  });
+  $("#tyzc_close").click(function(){
+  　$('input').removeAttr("disabled");//去除input元素的disabled属性
+  });
+});
+</script>
+  <div class="clear"></div>
+  <!--底部信息-->
+ <div class="foot"> <span>齐鲁律师事务所　版权所有　Copyright&copy;2017　All Rights Reserved　<a href="www.miibeian.gov.cn">鲁ICP备09072299号</a>　技术支持：<a href="http://www.jnyunchang.com">云畅网络</a> </span></div>
+</div>
+</body>
+</html>

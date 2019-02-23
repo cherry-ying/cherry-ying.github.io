@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网上开户系统-誉天下金融</title>
+<link href="../css/login.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/gVerify.js"></script>
+</head>
+
+<body>
+<!--通栏-->
+
+<!--导航栏-->
+<div class="logo_box">
+  <div class="comwidth">
+    <div class="logo"><a href="#"><img src="../images/logo.jpg" width="269" height="101"></a></div>
+  </div>
+</div>
+<!--主体-->
+<div class="kaihu comwidth">
+	<h3>网上开户系统</h3>
+    	<div class="step">
+        	<ul>
+            	<li class="current"><a class="current" href="">填写基本信息</a></li>
+                <li><a href="">仔细阅读并确认客户协议<span>></span></a></li>
+                <li><a href="">上传个人资料协议<span>></span></a></li>
+                <li><a href="">完成网上注册协议<span>></span></a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+        <form id="" name="" method="post" action="">
+      <label class="khmes"><span>*</span>真实姓名:</label>
+      <input type="text"  id="text" size="20" maxlength="50" /><br>
+       <label class="khmes"><span>*</span>性　　别:</label>
+       <label class="l_float radio">
+          <input type="radio" name="RadioGroup" value="男" >男 
+          <input type="radio" name="RadioGroup" value="女" >女</label>
+        <br>
+         <label class="khmes"><span>*</span>身份证号码:</label>
+      <input type="text"  id="text" size="20" maxlength="50" /><span class="l_float">请填写信息</span><br>
+      
+      
+      <label class="khmes"><span>*</span>图片验证码:</label>
+      
+      <input type="text"  id="code_input" class="l_float" size="20" maxlength="50" />
+      <div id="v_container" style="width: 80px;height: 42px; margin-bottom:30px; float:left;"> 
+    
+	<!--<button id="my_button">验证</button><span class="l_float">请填写信息</span>--> 
+    </div><br>
+      <label class="khmes"><span>*</span>电子邮箱:</label>
+      <input type="text"  id="text" size="20" maxlength="50" /><span class="l_float">请填写信息</span><br>
+      
+      <input type="button" style="margin-left:30%;" id="my_button" value="下一步">
+    </form>
+	<script>
+		var verifyCode = new GVerify("v_container");
+
+		document.getElementById("my_button").onclick = function(){
+			var res = verifyCode.validate(document.getElementById("code_input").value);
+			if(res){
+				alert("验证正确");
+			}else{
+				alert("验证码错误");
+			}
+		}
+	</script>
+    <div class="clear"></div>
+
+	
+</div>
+<div class="clear"></div>
+<!--底部信息-->
+<div class="copy"> <span>Copyright © 2017 brickhillcap.com.cn Inc. All Rights Reserved.  誉天下金融 版权所有鲁ICP备17001222号-1</span><br>
+  <span>理财有风险 投资需谨慎</span> </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>修改密码--齐鲁律师事务所</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<!--通栏-->
+		<div class="out">
+			<div class="top">
+				<div class="l_float"><span>欢迎光临齐鲁律师事务所资本市场联盟！</span></div>
+				<div class="top_r r_float">
+					<a href="login.html" target="_blank">会员登录</a>|<span>还没账号？马上</span>
+					<a href="huiyuan-sq.html" target="_blank">申请</a>
+				</div>
+			</div>
+			<!--logo-->
+			<div class="logo"> <img src="images/logo.png">
+				<div class="logo-r r_float"><img src="images/tel.png"></div>
+			</div>
+			<!--main-->
+			<div class="login">
+				<div class="login_wid">
+					<h1>修改密码</h1>
+					<form class="login-f" action="" id="" name="form1" method="post">
+						<label class="user psd_old">原密码</label>
+						<input type="password" class="text01" id="" name="password1" size="20" maxlength="50" placeholder="" />
+						<label class="user psd_new">新密码</label>
+						<input type="password" class="text01" id="" name="password2" size="20" maxlength="50" placeholder="" />
+						<label class="user psd_qr">确认密码</label>
+						<input type="password" class="text01" id="" name="password3" size="20" maxlength="50" placeholder="" />
+						<input type="button" class="butl" value="确认" onClick="return CheckBd();">
+					</form>
+				</div>
+				<script LANGUAGE="JavaScript">
+					function CheckBd() {
+						if(form1.password1.value == "") {
+							alert("请输入原密码!");
+							form1.password1.focus();
+							return false;
+						}
+						if(form1.password2.value == "") {
+							alert("请输入新密码!");
+							form1.password2.focus();
+							return false;
+						}
+						if(form1.password3.value == "") {
+							alert("请输入确认密码!");
+							form1.password3.focus();
+							return false;
+						}
+					}
+				</script>
+			</div>
+			<div class="clear"></div>
+			<!--底部信息-->
+			<div class="foot"> <span>齐鲁律师事务所　版权所有　Copyright&copy;2017　All Rights Reserved　<a href="www.miibeian.gov.cn">鲁ICP备09072299号</a>　技术支持：<a href="http://www.jnyunchang.com">云畅网络</a> </span></div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>安厨乐美小程序</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon-ac.ico">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+				height: 600px;
+			}
+			.swiper-container p{
+				position: absolute;
+				bottom:10px;
+				text-align: center;
+				width: 100%;
+				font-size: 22px;
+				z-index: 2;
+				color:#fd2322
+			}
+			.swiper-container p a{
+				color:#fd2322
+			}.swiper-slide img {
+				height: 600px;
+			}
+			.swiper-container p{
+				position: absolute;
+				bottom:10px;
+				text-align: center;
+				width: 100%;
+				font-size: 22px;
+				z-index: 2;
+				color:#009e39
+			}
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+  	<p>安厨乐美小程序已上线，微信小程序中可搜索</p>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<img src="anchu/1.png"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/2.png"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/3.png"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/4.png"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/5.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/6.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/7.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/8.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/9.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/10.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/11.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/12.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/13.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/14.jpg"/>
+      </div>
+      <div class="swiper-slide">
+      	<img src="anchu/15.jpg"/>
+      </div>
+      
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

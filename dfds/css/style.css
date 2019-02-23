@@ -1,0 +1,1377 @@
+@charset "utf-8";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Arial";
+	color: #4c4c4c;
+	background-color: #ffffff;
+}
+
+html {
+	padding: 0;
+	margin: 0 auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+li {
+	cursor: pointer;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+i,
+em,
+strong {
+	/*font-size: 100%;*/
+	font-style: normal;
+	font-weight: normal;
+	outline: none;
+	text-decoration: none;
+}
+
+input,
+textarea,
+input[type="search"],
+input[type="button"],
+input[type="text"] {
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.l_float {
+	float: left;
+}
+
+.r_float {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+a,
+img {
+	border: none;
+}
+
+img {
+	display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+.pub_width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.dis_flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top {
+	height: 40px;
+	color: #525252;
+	line-height: 40px;
+	background-color: #f4f5f6;
+	font-size: 16px;
+}
+
+.top .fa-phone {
+	margin-right: 4px;
+}
+
+.logo {
+	height: 116px;
+	justify-content: center;
+}
+
+
+/*导航*/
+
+.navigator {
+	background: #0013a4;
+	height: 40px;
+	line-height: 40px;
+}
+
+.navigator ul li {
+	float: left;
+}
+
+.navigator ul li a {
+	display: block;
+	padding: 0 18px;
+	color: #fff;
+}
+
+.swiper_ban {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper_ban .swiper-slide {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.swiper-slide img {
+	width: 100%;
+}
+
+.swiper_ban .ban_next,
+.swiper_ban .ban_prev {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 55px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "宋体";
+	font-size: 36px;
+	background-image: none;
+	margin: 0
+}
+
+.swiper_ban .ban_next {
+	right: 8%;
+}
+
+.swiper_ban .ban_prev {
+	left: 8%
+}
+
+
+/*预订*/
+
+.reserve {
+	background: rgb(204, 204, 204, 0.85);
+	position: absolute;
+	bottom: 0;
+	z-index: 99;
+	left: 50%;
+	padding: 8px 18px;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+}
+
+.reserve form {
+	display: flex;
+}
+
+.reserve .book_txt {
+	width: 300px;
+	height: 54px;
+	line-height: 54px;
+	color: #717171;
+	font-size: 18px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin: 0 10px
+}
+
+.reserve .book_but {
+	background: #e5aa47;
+	border-radius: 5px;
+	width: 170px;
+	height: 54px;
+	color: #fff;
+	font-size: 24px;
+	margin-left: 8px;
+}
+
+
+/*----------用来移除上下箭头----------*/
+
+input[type=date]::-webkit-inner-spin-button {
+	visibility: hidden;
+}
+
+.sy_about {
+	padding: 60px 0 50px;
+}
+
+.sy_about .sy_atxt {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.sy_about .sy_atxt h4 {
+	font-size: 20px;
+	color: #242424;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.sy_about .sy_atxt h4:after {
+	content: "";
+	width: 252px;
+	height: 2px;
+	background: #ffa100;
+	display: block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 6px;
+}
+
+.sy_about .sy_aboutcon {
+	font-size: 18px;
+	color: #4f4f4f;
+}
+
+.sy_about .sy_abut {
+	width: 138px;
+	height: 28px;
+	line-height: 28px;
+	color: #ffa100;
+	border: 1px solid #ffa100;
+	text-align: center;
+	display: block;
+	margin: 30px auto 40px;
+}
+
+.sy_about .sy_abut:after {
+	content: '>>';
+	margin-right: -15px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.sy_about .sy_abut:hover:after {
+	margin-right: 0;
+	opacity: 1;
+}
+
+
+/*热门房型*/
+
+.hot_home {
+	background: #f0f0f0;
+	overflow: hidden;
+}
+
+.sy_tit {
+	font-size: 30px;
+	color: #292929;
+	text-align: center;
+	padding: 40px 0
+}
+
+.hot_out {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.hot_out ul li {
+	float: left;
+	margin: 5px;
+	width: 280px;
+	height: 272px;
+	overflow: hidden;
+	position: relative;
+}
+.hot_out ul li img{
+	height: 100%;
+	width: auto;
+}
+.hot_out ul li img,
+.spef_info .spef_img img,
+.sy_nright .b_new img,
+.s_news ul li img,
+.meet_wed ul li .meet_sm img,
+.meet_wed ul li .meet_big img,
+.news_list ul li .news_img img,
+.themes_list ul li .themes_img img {
+	width: 100%;
+	display: block;
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+}
+
+.hot_out ul li:hover img,
+.spef_info .spef_img:hover img,
+.sy_nright .b_new:hover img,
+.s_news ul li:hover img,
+.meet_wed ul li .meet_sm:hover img,
+.meet_wed ul li .meet_big:hover img,
+.news_list ul li .news_img:hover img,
+.themes_list ul li:hover .themes_img img {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scaleX(1.1);
+	-moz-transform: scaleX(1.1);
+}
+
+.hot_out ul li .hot_con {
+	position: absolute;
+	bottom: 10px;
+	color: #FFFFFF
+}
+
+.hot_out ul li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.hot_out ul li:nth-child(3n+1) {
+	margin-left: 0;
+}
+
+.hot_out ul li span,
+.hot_out ul li strong {
+	display: block;
+	padding-left: 20px;
+	font-size: 18px;
+}
+
+.hot_out ul li:nth-child(3),
+.hot_out ul li:nth-child(4) {
+	width: 400px;
+	height: 272px;
+}
+
+
+/*特色餐饮*/
+
+.Special_food {
+	background: #FFFFFF;
+}
+
+.Special_food ul li {
+	position: relative
+}
+
+.Special_food ul li .spe_fimg {
+	width: 390px;
+	height: 362px;
+	overflow: hidden;
+}
+
+.Special_food ul li .spe_con {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	color: #FFFFFF;
+	text-align: center;
+	padding: 0 40px;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.Special_food ul li .spe_con span {
+	font-size: 24px;
+}
+
+.Special_food ul li .spe_bg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 50%;
+	height: 50%;
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+	opacity: 0;
+}
+
+.Special_food ul li:hover .spe_bg {
+	opacity: 1;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+	top: 0
+}
+
+.Special_food ul li .spe_con p {
+	opacity: 0;
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+}
+
+.Special_food ul li:hover .spe_con {
+	opacity: 1;
+	top: 40%;
+	transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+}
+
+.Special_food ul li:hover .spe_con p {
+	opacity: 1;
+	margin-top: 40px;
+	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.5s;
+	-moz-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+}
+
+
+/*会议与婚礼*/
+
+.meet_wed ul li {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.meet_wed ul li .meet_sm,
+.meet_wed ul li .meet_big {
+	height: 380px;
+	overflow: hidden;
+	margin-right: 14px;
+}
+
+.meet_wed ul li .meet_sm {
+	width: 280px;
+}
+
+.meet_wed ul li .meet_big {
+	width: 380px;
+}
+
+.meet_wed ul li .meet_sm img,
+.meet_wed ul li .meet_big img {
+	width: 100%;
+}
+
+.meet_wed ul li .meet_con {
+	flex: 1;
+	font-size: 16px;
+	color: #2a2a2a;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.meet_wed ul li .meet_con span {
+	font-size: 24px;
+	margin-bottom: 18px;
+	display: block;
+}
+
+
+/*首页新闻资讯*/
+
+.sy_news {
+	background: #f9f8f6;
+	padding: 70px 0;
+}
+
+.sy_nleft h4 {
+	font-size: 30px;
+	color: #4b4b4b;
+	margin-bottom: 70px;
+	padding-left: 10px
+}
+
+.sy_nleft ul li a {
+	font-size: 16px;
+	color: #4b4b4b;
+	width: 390px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	line-height: 42px;
+	display: block;
+	border: 1px solid transparent;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.sy_nleft ul li a:hover {
+	color: #f39800;
+	border: 1px solid #f39800;
+}
+
+.synew_more {
+	width: 138px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #f39800;
+	text-align: center;
+	margin-top: 60px;
+	display: block;
+	color: #f39800;
+}
+
+.synew_more:after {
+	content: '>>';
+	margin-right: -15px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.synew_more:hover:after {
+	margin-right: 0;
+	opacity: 1;
+}
+
+.sy_nright .b_new,
+.s_news ul li {
+	position: relative;
+	overflow: hidden;
+}
+
+.sy_nright .b_new {
+	width: 400px;
+	height: 404px;
+	float: left;
+}
+
+.sy_nright .b_new span,
+.s_news ul li span {
+	position: absolute;
+	bottom: 0;
+	padding: 0 10px;
+	font-size: 14px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 30px;
+}
+
+.sy_nright .b_new img,
+.s_news ul li img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.s_news ul li {
+	width: 216px;
+	height: 198px;
+	margin-bottom: 8px;
+	margin-left: 20px
+}
+
+.s_news ul li:last-of-type {
+	margin-bottom: 0
+}
+
+
+/*友情链接*/
+
+.link {
+	border: 1px solid #d3d3d3;
+	padding: 25px 40px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: #333;
+	margin: 66px auto 40px;
+}
+
+.link .yl_con {
+	flex: 1
+}
+
+.link a {
+	color: #90704d;
+	display: block;
+	float: left;
+	padding: 0 15px 6px;
+}
+
+
+/*底部*/
+
+.footer {
+	background: #f3f0ed;
+	padding: 40px 0;
+}
+
+.footer .foot_left {
+	flex: 1;
+}
+
+.footer .foot_nav ul li a {
+	float: left;
+	padding: 0 15px;
+	font-size: 18px;
+	color: #000000
+}
+
+.footer .foot_right span {
+	display: block;
+	font-size: 14px;
+	color: #5c5c5c;
+	text-align: center;
+}
+
+.foot_info {
+	padding-top: 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center
+}
+
+.foot_info a img {
+	margin-right: 120px;
+	width: 163px;
+}
+
+.foot_info ul {
+	margin: 14px 30px 0;
+	line-height: 30px;
+	font-size: 16px;
+	color: #4f4f4f
+}
+
+.copy a,
+.copy {
+	font-size: 14px;
+	color: #5c5c5c;
+	line-height: 30px;
+	text-align: center;
+}
+
+
+/*酒店概况*/
+
+.ny_ban img {
+	width: 100%;
+}
+
+.about_main {
+	padding: 60px 0 0;
+	font-size: 18px;
+	color: #444444;
+}
+
+.about_main h5 {
+	font-size: 26px;
+	color: #e4761c;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.about_main h6 {
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin-bottom: 40px
+}
+
+.about_main h6:after {
+	content: "";
+	width: 40px;
+	height: 2px;
+	background: #e4761c;
+	display: block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 10px;
+}
+
+.about_main p {
+	text-indent: 2em;
+	line-height: 30px;
+}
+
+.about_main .ny_aimg ul {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px
+}
+
+.about_main .ny_aimg ul li {
+	width: 380px;
+	height: 423px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+.about_main .ny_aimg ul li span {
+	font-size: 22px;
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	color: #fff
+}
+
+
+/*特色餐饮*/
+
+.spefood_con {
+	padding: 40px 0 0;
+}
+
+.spefood_tit img {
+	text-align: center;
+	margin: 0 auto 20px;
+}
+
+.spef_info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.spefood_con:nth-child(even) .spef_info{
+	flex-direction: row-reverse;
+}
+.spef_info .spef_img {
+	width: 320px;
+	height: 270px;
+	overflow: hidden;
+	margin-right: 30px;
+	transition: all ease-in-out 0.3s;
+}
+
+.spef_info .spef_img img {
+	display: block;
+	width: 100%;
+}
+
+.spef_info .spef_nr {
+	flex: 1;
+	font-size: 18px;
+	color: #2d2d2d;
+	line-height: 30px;
+}
+
+.spef_info .spef_nr span {
+	font-size: 24px;
+	color: #2d2d2d;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.spef_info .spef_nr span:after {
+	content: "";
+	width: 50px;
+	height: 3px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background: #e4761c;
+	display: block;
+	margin-top: 20px
+}
+
+.spef_info .spef_nr .spef_more {
+	width: 138px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #f39800;
+	border: 1px solid #f39800;
+	display: block;
+	text-align: center;
+	margin: 20px auto 0;
+}
+
+
+/*联系我们*/
+
+.contact {
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact_left {
+	margin-left: 130px;
+}
+
+.contact_left ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.contact_left ul li {
+	font-size: 14px;
+	color: #646464;
+	margin-bottom: 30px
+}
+
+.contact_left ul li .cont_t {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.contact_left ul li .icon {
+	text-align: center;
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.contact_left ul li .icon-youxiang {
+	font-size: 26px;
+}
+
+.contact_left ul li em {
+	margin-left: 40px;
+}
+
+.contact_left ul li span {
+	font-size: 18px;
+	color: #353535;
+}
+
+.cont_map {
+	width: 700px;
+	height: 420px;
+}
+
+
+/*新闻列表*/
+
+.news_list ul li {
+	padding: 36px 26px;
+	border: 1px solid #d5d5d5;
+	margin-top: 43px;
+	display: flex;
+	width: 1100px;
+	margin: 43px auto;
+	box-sizing: border-box;
+}
+
+.news_list ul li .news_img {
+	width: 300px;
+	height: 150px;
+	overflow: hidden;
+	display: block;
+	margin-right: 70px;
+}
+
+.news_list ul li .news_con {
+	flex: 1;
+}
+
+.news_list ul li .news_con .news_tit {
+	font-size: 16px;
+	color: #4f4f4f;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.news_list ul li .news_con .news_tit a {
+	display: block;
+	margin-right: 20px;
+	flex: 1;
+	font-size: 18px;
+	color: #4f4f4f;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.news_list ul li p {
+	font-size: 14px;
+	color: #868686;
+	line-height: 22px;
+	width: 520px;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-align: justify;
+}
+
+.news_list ul li .news_more {
+	width: 66px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #d5d5d5;
+	border-radius: 40px;
+	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px
+}
+
+.news_list ul li .news_more i {
+	text-align: center;
+	color: #d5d5d5
+}
+
+
+/*分页*/
+
+.pages {
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.pages a {
+	border: 1px solid #F0F0F0;
+	padding: 6px 14px;
+	font-size: 16px;
+	color: #535353;
+	margin-left: -1px;
+	align-items: center;
+	display: flex;
+	line-height: 22px;
+}
+
+.pages a:hover {
+	background: #f39500;
+	color: #fff;
+}
+
+
+/*新闻详情*/
+
+.news_det {
+	width: 800px;
+	margin: 56px auto;
+}
+
+.news_det h2 {
+	color: #303030;
+	font-size: 30px;
+	text-align: center;
+}
+
+.news_det .n_time {
+	font-size: 16px;
+	color: #4f4f4f;
+	text-align: center;
+	display: block;
+	margin: 30px auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #d3d3d3
+}
+
+.news_det p {
+	text-indent: 2em;
+	font-size: 16px;
+	color: #868686;
+	line-height: 24px;
+}
+
+.news_det img {
+	margin: 20px auto;
+	display: block;
+}
+
+.news_bot {
+	border-top: 1px solid #d3d3d3;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+	padding: 30px 0;
+}
+
+.news_bot p {
+	text-indent: 0;
+	font-size: 16px;
+	color: #535353;
+	line-height: 30px;
+}
+
+.news_bot p a {
+	color: #909090;
+	
+}
+
+.news_bot p a:hover {
+	color: #90704d
+}
+
+.news_bot .back {
+	width: 108px;
+	height: 38px;
+	border: 1px solid #d3d3d3;
+	border-radius: 40px;
+	text-align: center;
+}
+
+.news_bot .back a {
+	line-height: 32px;
+	color: #777777;
+	display: block;
+}
+
+.news_bot .back .icon-fanhui-copy {
+	font-size: 24px;
+}
+
+
+/*主题客房*/
+
+.themes_list ul li {
+	width: 958px;
+	height: 260px;
+	padding: 30px 0;
+	border: 1px solid #d5d5d5;
+	display: flex;
+	justify-content: space-between;
+	width: 1100px;
+	margin: 35px auto;
+	box-sizing: border-box;
+}
+
+.themes_list ul li .themes_img {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	display: block;
+	margin-left: 38px;
+	margin-right: 10px;
+}
+
+.theme_con {
+	flex: 1;
+	font-size: 14px;
+	color: #6e6e6e
+}
+
+.theme_con h4 {
+	font-size: 24px;
+	color: #2b2b2b;
+	margin-bottom: 30px
+}
+
+.theme_con .bot_info span {
+	font-size: 14px;
+	color: #909090;
+	margin-right: 10px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.themes_list ul li .room_price {
+	width: 240px;
+	border-left: 1px dashed #adadad;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #f39500;
+}
+
+.themes_list ul li .room_price strong {
+	display: block;
+	font-size: 36px;
+	color: #f39500;
+}
+
+.themes_list ul li .room_price em {
+	font-size: 16px;
+	color: #f39500;
+}
+
+.themes_list ul li .room_price a {
+	display: block;
+	color: #f39800;
+	border: 1px solid #f39800;
+	width: 100px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 16px;
+	border-radius: 40px;
+}
+
+.themes_list ul li .room_price a:after {
+	content: '>>';
+	margin-right: -15px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.themes_list ul li:hover .room_price a:after {
+	margin-right: 0;
+	opacity: 1;
+}
+
+
+/*产品详情 */
+
+.roomdesc {
+	width: 1100px;
+	margin: 60px auto;
+	display: flex;
+	border: 1px solid #bbbbbb;
+	padding: 30px 18px;
+	box-sizing: border-box;
+}
+
+.roomdesc .suobox {
+	overflow: hidden;
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+	justify-content: center;
+}
+
+.roomdesc .suolist {
+	white-space: nowrap;
+	overflow-x: auto;
+	font-size: 0;
+}
+
+.roomdesc .suolist::-webkit-scrollbar {
+	display: none;
+}
+
+.roomdesc .suolist div {
+	display: inline-block;
+	width: 60px;
+	height: 44px;
+	margin-left: 8px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.roomdesc .suolist div:last-child {
+	margin-right: 8px;
+}
+
+.roomdesc .suolist .active {
+	border: 1px solid #f39700;
+}
+
+.sbox {
+	width: 548px;
+	overflow: hidden;
+}
+
+.roomdesc .pleft {
+	width: 600px;
+	height: 460px;
+	position: relative;
+}
+
+.roomdesc .preimg {
+	width: 600px;
+	height: 460px;
+	margin: auto;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.roomdesc .preimg img {
+	width: 100%;
+}
+
+.roomdesc .sbtnl,
+.roomdesc .sbtnr {
+	width: 26px;
+	text-align: center;
+	line-height: 45px;
+	font-family: "宋体";
+	color: white;
+	font-size: 22px;
+	cursor: pointer;
+	font-weight: bold;
+	height: 45px;
+	-webkit-user-select: none;
+	background-color: #f39700;
+}
+
+.room_right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.room_con {
+	flex: none;
+	padding: 0 40px;
+	font-size: 16px;
+	color: #6e6e6e;
+	line-height: 30px;
+}
+
+.room_con strong {
+	color: #f39500;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.room_con strong em {
+	color: #f39500;
+	font-size: 16px;
+}
+
+.room_con .bot_info {
+	margin-top: 60px
+}
+
+
+/*在线商城*/
+.store_list ul  {
+	    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.store_list ul li{
+	padding:12px 24px;
+	border:1px solid #cdcdcd;
+	float: left;
+	margin:48px 0 30px;
+}
+.store_list ul li .store_img{
+	width: 170px;
+	height: 170px;
+	overflow: hidden;
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store_list ul li .store_img img{
+	width: 100%;
+}
+.store_list ul li p{
+	overflow:hidden; text-overflow:ellipsis;white-space:nowrap;
+	font-size: 14px;
+	color:#000;
+	margin:6px auto;
+	text-align: center;
+}
+.store_list ul li span{
+	display: block;
+	font-size: 14px;
+	color:#656565
+}
+.store_list ul li strong{
+	font-size: 24px;
+	color:#f39500;
+	float: right;
+}
+.store_list ul li strong em{
+	font-size: 16px;
+}
+/*餐厅展示*/
+.dining_con{
+	margin:60px 90px;
+	text-align: justify;
+	font-size: 18px;
+	color:#2d2d2d;
+	line-height: 30px;
+}
+
+.dining_con span {
+	font-size: 24px;
+	color: #2d2d2d;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+	margin-top:70px;
+	
+	
+}
+
+.dining_con span:after {
+	content: "";
+	width: 50px;
+	height: 3px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background: #e4761c;
+	display: block;
+	margin-top: 20px
+}
+.img_pic {
+	display: flex;
+	justify-content: space-between;
+	margin:50px 0 60px;
+}
+.img_pic a{
+	width: 320px;
+	height: 270px;
+	overflow: hidden;
+}
+.food_list ul{
+	width: 1050px;
+	margin:0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.food_list ul li{
+	margin: 10px 15px;
+}
+.food_list ul li a{
+	width: 320px;
+	height: 270px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.food_list ul li span{
+	font-size: 20px;
+	color:#2d2d2d;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+}

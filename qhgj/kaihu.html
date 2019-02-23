@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>开立账户-茂嘉金融</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/gVerify.js"></script>
+
+<!--选项卡-->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/organictabs.jquery.js"></script>
+
+</head>
+
+<body>
+<div class="top out">
+  <div class="logo l_float"> <a href="#"><img src="images/logo.png" alt="茂嘉金融logo"></a> </div>
+  <div class="top_right r_float">
+    <div class="top_tel"><img src="images/tel.png" alt="茂嘉金融电话"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="about.html">关于管家</a></li>
+        <li><a href="newslist.html">新闻资讯</a></li>
+        <li><a href="">客户专区</a></li>
+        <li><a href="waipan.html">外盘期货</a></li>
+        <li><a href="">内盘期货</a></li>
+        <li><a href="kaihu.html">开户交易</a></li>
+        <li><a href="down.html">下载中心</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="background:url(images/about.png) no-repeat center; width:100%; height:200px;"></div>
+
+<div class="main">
+	<div class="out">
+    <div class="nav_about l_float">
+		<div class="nav_t">
+    		<span>关于管家</span>
+            <ul>
+				<li><a href="">公司简介</a></li>
+                <li><a href="">客户保障</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">管家优势</a></li>            
+            </ul></div>
+            <input type="button" class="but1"  value="开立账户" onclick="javascript:window.location=''";>
+           <input type="button" class="but1"  value="申请代理" onclick="javascript:window.location=''">
+    	</div>
+        <div class="about_r l_float">
+        <div class="about_rt">
+        <div class="about_jj l_float"><span>公司简介</span></div>
+              <div class="weizhi r_float"> <span>您的位置：<a href="" title="首页">首页</a> > <a href="" title="开立账户">开立账户</a></span> </div>
+        </div>
+        <div id="example-two" class="clear" >
+		<ul class="nav">
+			<li class="nav-one"><a href="#pwkh" class="current">外盘开户</a></li>
+			<li class="nav-two last"><a href="#npkh">内盘开户</a></li>
+		</ul>
+		<div class="list-wrap"> 
+			<ul id="pwkh">
+				<p>低投入，高收入。最低300美金即可操作一手美原油。使用信管家交易软件。拥有美原油，天然气，美铜等多种标的。详情请咨询客服。</p>
+              <form id=""method="post" action="">
+      <label class="khmes"><span>*</span>姓名:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="请输入中文名称"/><br/>
+       
+         <label class="khmes"><span>*</span>电话:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="请输入11位中国手机号"/><br/>
+       <label class="khmes"><span>*</span>邮箱:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="建议用QQ邮箱注册" /><br/>
+      
+      <label class="khmes"><span>*</span>图片验证码:</label>
+      
+      <input type="text"  id="code_input" class="l_float" size="20" maxlength="50" placeholder="请输入右边看到的数字" />
+      <div id="v_container"> 
+    </div><br/>
+     <label class="khmes"><span>*</span>短信验证码:</label>
+      
+      <input type="text"  id="code_in" class="l_float" size="20" maxlength="50" /><input type="button" id="but" value="获取验证码">
+      
+      <input type="submit" id="my_button"  value="提交申请">
+    </form>
+	<script>
+		var verifyCode = new GVerify("v_container");
+
+		document.getElementById("my_button").onclick = function(){
+			var res = verifyCode.validate(document.getElementById("code_input").value);
+			if(res){
+				alert("验证正确");
+			}else{
+				alert("验证码错误");
+			}
+		}
+	</script>
+			</ul>
+			<ul id="npkh" class="hide">
+    <p>低投入，高收入。最低300美金即可操作一手美原油。详情请咨询客服。</p>
+             <form id=""method="post" action="">
+      <label class="khmes"><span>*</span>姓名:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="请输入中文名称"/><br/>
+       
+         <label class="khmes"><span>*</span>电话:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="请输入11位中国手机号"/><br/>
+       <label class="khmes"><span>*</span>邮箱:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="建议用QQ邮箱注册" /><br/>
+      
+      <label class="khmes"><span>*</span>图片验证码:</label>
+      
+      <input type="text"  id="code_input" class="l_float" size="20" maxlength="50" placeholder="请输入右边看到的数字" />
+      <div id="v_container1"> 
+    </div><br/>
+    
+    
+    
+     <label class="khmes"><span>*</span>短信验证码:</label>
+      
+      <input type="text"  id="code_in" class="l_float" size="20" maxlength="50" /><input type="button" id="but" value="获取验证码">
+      
+      <input type="submit" id="my_button" value="提交申请">
+    </form>
+
+			</ul>
+			
+		</div>
+	</div>
+
+<script type="text/javascript">
+$(function() {
+	// 调用插件
+	$("#example-two").organicTabs({
+		"speed": 100,
+	});
+});
+
+</script>
+        
+          </div>
+        </div>
+         <div class="clear"></div> 
+        
+    </div>
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+  		<!--<div class="kaihu"><a href="">外盘开户</a><div class="kaihu_r"><a href="">内盘开户</a></div></div>
+    <p>低投入，高收入。最低300美金即可操作一手美原油。使用信管家交易软件。拥有美原油，天然气，美铜等多种标的。详情请咨询客服。</p>
+              <form id=""method="post" action="">
+      <label class="khmes"><span>*</span>姓名:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="请输入中文名称"/><br/>
+       
+         <label class="khmes"><span>*</span>电话:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="请输入11位中国手机号"/><br/>
+       <label class="khmes"><span>*</span>邮箱:</label>
+      <input type="text"  id="text" size="20" maxlength="50" placeholder="建议用QQ邮箱注册" /><br/>
+      
+      <label class="khmes"><span>*</span>图片验证码:</label>
+      
+      <input type="text"  id="code_input" class="l_float" size="20" maxlength="50" placeholder="请输入右边看到的数字" />
+      <div id="v_container"> 
+    </div><br/>
+     <label class="khmes"><span>*</span>短信验证码:</label>
+      
+      <input type="text"  id="code_input" class="l_float" size="20" maxlength="50" /><input type="button" id="but" value="获取验证码">
+      
+      <input type="submit" id="my_button" value="提交申请">
+    </form>
+	<script>
+		var verifyCode = new GVerify("v_container");
+
+		document.getElementById("my_button").onclick = function(){
+			var res = verifyCode.validate(document.getElementById("code_input").value);
+			if(res){
+				alert("验证正确");
+			}else{
+				alert("验证码错误");
+			}
+		}
+	</script>
+-->
+
+
+<!--底部-->
+<div class="foot">
+  <div class="out">
+      <ul>
+        <a href="">关于管家</a>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">客户保障</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">管家优势</a></li>
+      </ul>
+      <ul>
+        <a href="">新闻资讯</a>
+        <li><a href="#">管家公告</a></li>
+        <li><a href="#">交易策略</a></li>
+        <li><a href="#">财经日历</a></li>
+      </ul>
+      <ul>
+        <a href="jiaoyi.html">客户专区</a>
+        <li><a href="#">代理介绍</a></li>
+        <li><a href="#">代理申请</a></li>
+      </ul>
+      <ul>
+        <a href="newlist.html">外盘期货</a>
+        <li><a href="#">香港恒生指数</a></li>
+        <li><a href="#">富时中国A50</a></li>
+        <li><a href="#">美原油</a></li>
+        <li><a href="#">美白银</a></li>
+        <li><a href="#">迷你恒指</a></li>
+        <li><a href="#">德指</a></li>
+      </ul>
+      <ul>
+        <a href="#">内盘期货</a>
+        <li><a href="#">股指交易</a></li>
+        <li><a href="#">国债交易</a></li>
+        <li><a href="#">商品期货</a></li>
+      </ul>
+      <ul>
+        <li><img src="images/foot.png"> </li>
+      </ul>
+      <ul>
+        <li> <img src="images/er.png"></li>
+      </ul>
+  </div>
+  <div class="clear"></div>
+  
+</div>
+<div class="copy"> <p>期货管家版权所有，不得转载</p>
+  <p> 风险提示：投资有风险，选择需谨慎，预期或测算收益不等于实际收益。</p> </div>
+</body>
+</html>

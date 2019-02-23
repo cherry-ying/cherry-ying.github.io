@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>合作伙伴展示--齐鲁律师事务所</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--左侧导航所需js文件-->
+<script src="js/icon.js" type="text/javascript"></script>
+<!--下拉列表-->
+<script type="text/javascript">
+function ShowImage(page, tag)
+{
+    var i = 1;
+    var el;
+    while (el = document.getElementById(tag + i)) {
+        if (i == page)
+            el.style.display = 'block';
+        else
+            el.style.display = 'none';
+        i++;
+    }
+}
+</script>
+</head>
+<body>
+<!--通栏-->
+<div class="out">
+  <div class="top">
+  <div class="l_float"><span>欢迎光临齐鲁律师事务所资本市场联盟！</span></div>
+    <div class="top_r r_float"><a href="login.html" target="_blank">会员登录</a>|<span>还没账号？马上</span><a href="huiyuan-sq.html" target="_blank">申请</a></div>
+  </div>
+  <!--logo-->
+  <div class="logo"> <img src="images/logo.png">
+    <div class="logo-r r_float"><img src="images/tel.png"></div>
+  </div>
+  <!--main-->
+  <div style="background:url(images/bg.png) no-repeat; height:240px; width:100%; margin-top:10px; margin-bottom:30px;"></div>
+    <div class="main-l l_float">
+    <ul id="out">
+        <li onClick="window.location.href='intro.html'"><div class="icon"><img src="images/icon_lmpt.png"></div><span>市场联盟介绍</span></li>
+        <li onClick="window.location.href='partners-zs.html'"><div class="icon"><img src="images/icon_hzhb.png"></div>合作伙伴展示</li>
+        <li onClick="window.location.href='requre-sq1.html'"><div class="icon"><img src="images/icon_hzhbsq.png"></div>合作伙伴申请</li>
+        <li onClick="window.location.href='#'"><div class="icon"><img src="images/icon_hyzs.png"></div>会员展示</li>
+        <li onClick="window.location.href='huiyuan-sq.html'"><div class="icon"><img src="images/icon_hysq.png"></div>会员申请</li>
+        <li onClick="window.location.href='requir-sq1.html'"><div class="icon"><img src="images/icon_xqsq.png"></div>需求申请</li>
+        <li onClick="window.location.href='resources.html'"><div class="icon"><img src="images/icon_zydj.png"></div>资源对接</li>
+        <li onClick="window.location.href='contact.html'"><div class="icon"><img src="images/icon_lxfs.png"></div>联系方式</li>
+      </ul>
+     </div>
+  <div class="main-r r_float">
+    <div class="main_top">
+      <div class="weizhi"><span>您当前所在位置：<a href="" title="首页">首页</a> > <a href="" title="合作伙伴展示">合作伙伴展示</a></span> </div>
+      <div class="screen"> <span>按行业进行筛选</span>
+         <select onchange="ShowImage(parseInt(this.value), 'image');" class="list">
+                <option selected="selected" value="1">金融行业</option>
+                <option value="2">IT行业</option>
+                <option value="3">建筑行业</option>
+            </select>
+      </div>
+    </div>
+    <div class="clear"></div>
+   <div style="display:block" id="image1" class="hzzs">
+      <ul>
+        <li><a href="" target="_blank"><img src="images/hzlogo1.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo2.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo3.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/logo.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo5.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo1.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo2.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo3.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo4.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo5.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo1.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo2.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo3.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo4.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo5.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo1.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo2.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo3.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo4.png"></a></li>
+      </ul>
+    </div>
+        <div style="display:none" id="image2"  class="hzzs">
+<ul>
+        <li><a href="" target="_blank"><img src="images/hzlogo1.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo2.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo3.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/logo.png"></a></li></ul>
+            </div>
+            <div style="display:none" id="image3"  class="hzzs">
+<ul>
+        <li><a href="" target="_blank"><img src="images/hzlogo1.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo2.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo3.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/logo.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo5.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo1.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo2.png"></a></li>
+        <li><a href="" target="_blank"><img src="images/hzlogo3.png"></a></li></ul>
+            </div>
+  </div>
+  <div class="clear"></div>
+  
+  <!--底部信息-->
+ <div class="foot"> <span>齐鲁律师事务所　版权所有　Copyright&copy;2017　All Rights Reserved　<a href="www.miibeian.gov.cn">鲁ICP备09072299号</a>　技术支持：<a href="http://www.jnyunchang.com">云畅网络</a> </span></div>
+</div>
+</body>
+</html>

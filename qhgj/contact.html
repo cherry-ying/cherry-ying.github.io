@@ -1,0 +1,246 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>联系我们-茂嘉金融</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<script src="mappic/jquery.js" language="javascript"></script>
+<script src="mappic/js.js"></script>
+</head>
+<body>
+<div class="top out">
+  <div class="logo l_float"> <a href="#"><img src="images/logo.png" alt="茂嘉金融logo"></a> </div>
+  <div class="top_right r_float">
+    <div class="top_tel"><img src="images/tel.png" alt="茂嘉金融电话"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="about.html">关于管家</a></li>
+        <li><a href="newslist.html">新闻资讯</a></li>
+        <li><a href="">客户专区</a></li>
+        <li><a href="waipan.html">外盘期货</a></li>
+        <li><a href="">内盘期货</a></li>
+        <li><a href="kaihu.html">开户交易</a></li>
+        <li><a href="down.html">下载中心</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="contact">
+	<div id="allmap"></div>
+    <div class="y-row">
+    	<div class="box" id="contactinfo">
+        	 <div class="menu"> <a href="javascript:;" class="s"><b></b><span>济南总部</span></a> <a href="javascript:;"><b></b><span>上海营业部</span></a> 
+              <a href="javascript:;"><b></b><span>青岛分公司</span></a>
+               <a href="javascript:;"><b></b><span>临沂分公司</span></a>
+             </div>
+             <div class="item" style="display: block;">
+        <h1>期货金融</h1>
+        <span class="t">地址Add</span><br>
+        济南市市中区经四路万达广场写字楼A座<br>
+        <span class="t">联系人</span><br>
+        吴经理<br>
+        <span class="t">电话Tel</span><br>
+        13256678941<br>
+        <span class="t">QQ</span><br>
+        771118989<br>
+        <span class="t">投诉电话</span><br>
+        13256678941 <br>
+        <p>我们的工作从周一到周五(08:30am - 22:30pm) </p>
+      </div>
+      <div class="item">
+        <h1>期货金融</h1>
+        <span class="t">地址Add</span><br>
+        济南市市中区经四路<br>
+        <span class="t">联系人</span><br>
+        吴经理<br>
+        <span class="t">电话Tel</span><br>
+        13256678941<br>
+        <span class="t">QQ</span><br>
+        771118989<br>
+        <span class="t">投诉电话</span><br>
+        13256678941 <br>
+        <p>我们的工作从周一到周五(08:30am - 22:30pm) </p>
+      </div>
+      <div class="item">
+        <h1>期货金融</h1>
+        <span class="t">地址Add</span><br>
+        青岛市黄岛区中南金石国际广场A座17楼<br>
+        <span class="t">联系人</span><br>
+        耿经理<br>
+        <span class="t">电话Tel</span><br>
+        18266209905<br>
+        <span class="t">投诉电话</span><br>
+        18266209905<br>
+        <p>我们的工作从周一到周五(08:30am - 22:30pm) </p>
+      </div>
+      <div class="item">
+        <h1>期货金融</h1>
+        <span class="t">地址Add</span><br>
+        山东省临沂市兰山区新华路万阅城写字楼A座15A层<br>
+        <span class="t">联系人</span><br>
+        舒经理<br>
+        <span class="t">电话Tel</span><br>
+        18669509880<br>
+        <span class="t">投诉电话</span><br>
+        18669509880<br>
+        <p>我们的工作从周一到周五(08:30am - 22:30pm) </p>
+      </div>
+            
+        </div>
+    </div>
+</div>
+
+ 
+</body>
+</html>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=oiagGWPr9jmXI28rgVqDbQyS"></script>
+<script type="text/javascript">
+	var url = location.search;
+	var curarea;
+	var urlary = url.split('&');
+	if(urlary.length == 4)
+		curarea = parseInt(urlary[3]);	
+	if(!(curarea == 0 || curarea == 1 || curarea == 2))
+		curarea = 0;
+	$("#contactinfo .menu a").eq(curarea).addClass('s');
+	$("#contactinfo .item").eq(curarea).show();	
+    var map = new BMap.Map("allmap");	
+	var  mapStyle = {style:"dark"};
+	map.setMapStyle(mapStyle);
+	map.addControl(new BMap.NavigationControl());
+	var wzpt = new BMap.Point(121.443146,31.223841);
+	var wzicon = new BMap.Icon("mappic/mapiconsh.png", new BMap.Size(102,123), {'anchor':new BMap.Size(102,123)});
+	var hzpt = new BMap.Point(117.008489,36.668408);
+	var hzicon = new BMap.Icon("mappic/mapiconhk.png", new BMap.Size(102,123), {'anchor':new BMap.Size(102,123)});
+	
+	var qdpt = new BMap.Point(120.197488,35.955585);
+	var qdicon = new BMap.Icon("mappic/mapiconqd.png", new BMap.Size(102,123), {'anchor':new BMap.Size(102,123)});
+	var lypt = new BMap.Point(118.3431,35.067623);
+	var lyicon = new BMap.Icon("mappic/mapiconly.png", new BMap.Size(102,123), {'anchor':new BMap.Size(102,123)});
+	
+	
+	var markerhz = new BMap.Marker(hzpt,{icon:hzicon});
+	var markerwz = new BMap.Marker(wzpt,{icon:wzicon});
+	
+	var markerqd = new BMap.Marker(qdpt,{icon:qdicon});
+	var markerly = new BMap.Marker(lypt,{icon:lyicon});
+	map.addOverlay(markerhz);
+	map.addOverlay(markerwz);
+	
+	map.addOverlay(markerqd);map.addOverlay(markerly);
+	function mapptshow(id){
+		if(id == 0)
+			map.centerAndZoom(new BMap.Point(117.008489,36.668408),16);
+		else if(id == 1)
+			
+			map.centerAndZoom(new BMap.Point(121.443146,31.223841),16);
+			
+			else if(id == 2)
+			
+			map.centerAndZoom(new BMap.Point(120.197488,35.955585),19);
+			else if(id == 3)
+			
+			map.centerAndZoom(new BMap.Point(118.3431,35.067623),16);
+	}
+    $(function(){
+		mapptshow(curarea);
+		$("#contactinfo .menu a").click(function(){
+			if(!$(this).hasClass("s")){
+				$("#contactinfo .menu a").removeClass('s');
+				$(this).addClass("s");
+				$("#contactinfo .item").hide();
+				$("#contactinfo .item").eq($(this).index()).show();
+				mapptshow($(this).index());
+			}
+		})	
+	})</script> 
+
+
+
+<!--<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");    // 创建Map实例
+	map.centerAndZoom(new BMap.Point(120.659111, 28.025773), 15);  // 初始化地图,设置中心点坐标和地图级别
+	map.setCurrentCity("温州");          // 设置地图显示的城市 此项是必须设置的
+	
+	
+	
+//创建位置标记
+	var pt = new BMap.Point(120.669538,28.034231);
+	var myIcon = new BMap.Icon("imagess/mapiconwz.png", new BMap.Size(102,123));
+	var marker2 = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+	map.addOverlay(marker2);              // 将标注添加到地图中
+	var hkpt = new BMap.Point(114.189259,22.289711);
+	var hkIcon = new BMap.Icon("imagess/mapiconwz.png", new BMap.Size(102,123));
+	var markerhk = new BMap.Marker(hkpt,{icon:hkIcon});  // 创建标注
+	map.addOverlay(markerhk);              // 将标注添加到地图中
+	
+
+	
+	
+	
+	//地图样式
+	var  mapStyle ={ 
+        features: ["road", "building","water","land"],//隐藏地图上的poi
+        style : "dark"  //设置地图风格为高端黑
+    }
+	map.setMapStyle(mapStyle);
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+		map.addControl(top_left_navigation);     
+	
+</script>-->
+<div class="foot">
+  <div class="out">
+    <ul>
+      <a href="">关于管家</a>
+      <li><a href="#">公司简介</a></li>
+      <li><a href="#">客户保障</a></li>
+      <li><a href="#">联系我们</a></li>
+      <li><a href="#">管家优势</a></li>
+    </ul>
+    <ul>
+      <a href="">新闻资讯</a>
+      <li><a href="#">管家公告</a></li>
+      <li><a href="#">交易策略</a></li>
+      <li><a href="#">财经日历</a></li>
+    </ul>
+    <ul>
+      <a href="jiaoyi.html">客户专区</a>
+      <li><a href="#">代理介绍</a></li>
+      <li><a href="#">代理申请</a></li>
+    </ul>
+    <ul>
+      <a href="newlist.html">外盘期货</a>
+      <li><a href="#">香港恒生指数</a></li>
+      <li><a href="#">富时中国A50</a></li>
+      <li><a href="#">美原油</a></li>
+      <li><a href="#">美白银</a></li>
+      <li><a href="#">迷你恒指</a></li>
+      <li><a href="#">德指</a></li>
+    </ul>
+    <ul>
+      <a href="#">内盘期货</a>
+      <li><a href="#">股指交易</a></li>
+      <li><a href="#">国债交易</a></li>
+      <li><a href="#">商品期货</a></li>
+    </ul>
+    <ul>
+      <li><img src="images/foot.png"> </li>
+    </ul>
+    <ul>
+      <li> <img src="images/er.png"></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="copy">
+  <p>期货管家版权所有，不得转载</p>
+  <p> 风险提示：投资有风险，选择需谨慎，预期或测算收益不等于实际收益。</p>
+</div>
+</body>
+</html>
+

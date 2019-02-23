@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>花生找房APP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		 <link rel="icon" type="image/x-icon" href="images/favicon-hszf.ico">
+
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="css/swiper.min.css">
+
+		<!-- Demo styles -->
+		<style>
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom:0;
+				right: 0;
+			}
+			
+			.swiper-slide {
+				width: 100%;
+				height: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.swiper-slide img {
+				height: 600px;
+			}
+			.swiper-container p{
+				position: absolute;
+				bottom:10px;
+				text-align: center;
+				width: 100%;
+				font-size: 22px;
+				z-index: 2;
+				color:#fd2322
+			}
+			.swiper-container p a{
+				color:#fd2322
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Swiper -->
+		
+		<div class="swiper-container">
+			<p>花生找房APP同东顺置业小程序(APP已上线)	<a href="https://itunes.apple.com/cn/app/id1434520126?mt=8" target="_blank">App Store 预览</a></p>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="dongshun/1.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="dongshun/2.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="dongshun/3.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="dongshun/4.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="dongshun/5.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="dongshun/6.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="dongshun/7.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="dongshun/8.jpg" />
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Pagination -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+		<script src="js/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				spaceBetween: 20,
+				autoplay:true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+
+</html>
