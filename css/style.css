@@ -25,7 +25,7 @@ a:visited{
 
 a:hover{
 	text-decoration: none;
-	color: #c80a48;
+	color: #fd0202;
 	cursor: pointer;
 }
 
@@ -68,7 +68,7 @@ h2.heading-title{
 	font-weight: 700;
 }
 .website-list:hover .h4{
-	color:#c80a48 ;
+	color:#fd0202 ;
 }
 .text-overflow{
 	overflow: hidden;
@@ -116,10 +116,6 @@ p{
   Banner styles
 ================================================*/
 
-.carousel,
-.carousel .item {
-	height: 600px;
-}
 
 .carousel .item img {
 	width: 100%;
@@ -163,17 +159,19 @@ p{
 	font-family: 'Roboto', serif;
 }
 .navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > li > a:focus{
-	color: #E3AE57;
+	color: #fd0202;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #E3AE57;
+    color: #fd0202;
     background-color: transparent;
 }
 
 .navbar-brand img{
-	float: left;
-	margin-right: 20px;
+	    float: left;
+    margin-right: 20px;
+    width: 60%;
+    margin-top: 5px;
 }
 .navbar-brand{
 	text-transform: uppercase;
