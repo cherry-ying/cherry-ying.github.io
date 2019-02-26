@@ -82,22 +82,7 @@
 			<div class="swiper-button-next"></div>
 			<div class="swiper-button-prev"></div>
 		</div>
-		<script src="js/swiper.min.js"></script>
-		<script>
-			var swiper = new Swiper('.swiper-container', {
-				slidesPerView: 1,
-				spaceBetween: 30,
-				loop: true,
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-			});
-		</script>
+		
 
 		<!-- 网站2018开始 -->
 		<section id="section-website" class="section-padding">
@@ -559,10 +544,25 @@
 		<script src="js/jquery.singlePageNav.js"></script>
 		<script src="js/jquery.sticky.js"></script>
 		<script type="text/javascript" src="js/custom.js"></script>
+		<script src="js/swiper.min.js"></script>
 
 		<script>
 			$(".main-nav").sticky();
 			new WOW().init();
+			//banner
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
 
 			function myEvent(obj, ev, fn) {
 				if(obj.attachEvent) {
