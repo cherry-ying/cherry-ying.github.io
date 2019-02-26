@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>立森教育</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="css/swiper.min.css">
 		<style>
 			html,
@@ -43,20 +44,6 @@
 				align-items: center;
 			}
 			
-			.swiper-slide img {
-				height: 600px;
-			}
-			
-			.swiper-container p {
-				position: absolute;
-				bottom: 10px;
-				text-align: center;
-				width: 100%;
-				font-size: 22px;
-				z-index: 2;
-				color: #fd2322
-			}
-			
 			.swiper-container p a {
 				color: #fd2322
 			}
@@ -74,6 +61,11 @@
 				z-index: 2;
 				color: #009e39
 			}
+			@media screen and (max-width:768px) {
+				.swiper-button-next,
+				.swiper-button-prev{
+					background-image: none;
+				}
 		</style>
 	</head>
 
