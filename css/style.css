@@ -87,7 +87,9 @@ h2.heading-title {
 .navbar-default .navbar-toggle {
 	border-color: transparent;
 }
-
+.navbar-toggle{
+	margin-right: 5px;
+	}
 
 /*网站2018*/
 
