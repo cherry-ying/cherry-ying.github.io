@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>车佳逸-同城货的</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			.swiper-container p a {
+				color: #fd2322
+			}
+			.swiper-slide img {
+				height: 600px;
+			}
+			
+			.swiper-container p {
+				position: absolute;
+				bottom: 10px;
+				text-align: center;
+				width: 100%;
+				font-size: 22px;
+				z-index: 2;
+				color: #009e39
+			}
+			@media screen and (max-width:768px) {
+				.swiper-button-next,
+				.swiper-button-prev{
+					background-image: none;
+				}
+		</style>
+	</head>
+
+	<body>
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="huodi/1.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/2.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/3.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/4.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/5.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/6.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/7.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/8.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/9.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/10.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/11.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/12.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/13.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/14.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/15.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/16.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/17.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/18.jpg" />
+				</div>
+				<div class="swiper-slide">
+					<img src="huodi/19.jpg" />
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="js/swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+
+</html>
