@@ -1,0 +1,46 @@
+html,
+body {
+	font-size: 100%;
+	background: #ffffff;
+}
+.row{
+	width: 80%;
+	margin:0 auto
+}
+.clear {
+	clear: both;
+}
+
+.row-title {
+	color: #FFF;
+	padding: 5px 41px 5px 30px;
+	display: inline-block;
+	font-size: 18px;
+	background: #6ecadc;
+}
+
+
+.info-block strong {
+	color: #333333;
+	font-size:16px;
+}
+
+.edu-list {
+	padding: 10px 0;
+	overflow: hidden;
+}
+.skill-list ul li{
+	list-style-type:disc ;
+	line-height: 32px;
+}
+@media (max-width: 768px) {
+	.row{
+		width: 100%;
+	}
+	.info-block p{
+	font-size: 14px;
+}
+	.edu-list span{
+		font-size: 14px;
+	}
+}

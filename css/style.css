@@ -44,29 +44,6 @@ li {
 	list-style: none;
 }
 
-
-/* Typography
-================================================== */
-
-body,
-p {
-	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 30px;
-	background-color: #0C0A09;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Roboto', sans-serif;
-}
-
-
 /*网站*/
 
 h2.heading-title {
@@ -117,10 +94,6 @@ h2.heading-title {
 	padding: 60px 0px;
 }
 
-p {
-	color: #929292;
-	background-color: transparent;
-}
 
 .section-heading {
 	width: 80%;
