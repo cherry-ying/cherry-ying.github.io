@@ -3,28 +3,32 @@ body {
 	font-size: 100%;
 	background: #ffffff;
 }
+.resume .row:last-of-type{
+	margin-bottom:40px
+}
 .row{
 	width: 80%;
 	margin:0 auto
 }
+.about-tit{
+	font-size: 22px;
+	margin:40px auto 20px
+}
 .clear {
 	clear: both;
 }
-
 .row-title {
-	color: #FFF;
-	padding: 5px 41px 5px 30px;
-	display: inline-block;
-	font-size: 18px;
-	background: #6ecadc;
+	    color: #ffffff;
+    padding: 5px 41px 5px 30px;
+    display: inline-block;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
 }
-
-
 .info-block strong {
 	color: #333333;
 	font-size:16px;
 }
-
 .edu-list {
 	padding: 10px 0;
 	overflow: hidden;
