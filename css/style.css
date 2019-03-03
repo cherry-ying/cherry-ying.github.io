@@ -1,4 +1,4 @@
-	html {
+html {
 	overflow-x: hidden !important;
 	width: 100%;
 	height: 100%;
@@ -14,6 +14,7 @@ body {
 	color: #333333;
 	font-size: 14px;
 	background: #fff;
+	font-family: "微软雅黑";
 }
 
 a:link,
@@ -44,6 +45,7 @@ li {
 	list-style: none;
 }
 
+
 /*网站*/
 
 h2.heading-title {
@@ -64,9 +66,11 @@ h2.heading-title {
 .navbar-default .navbar-toggle {
 	border-color: transparent;
 }
-.navbar-toggle{
+
+.navbar-toggle {
 	margin-right: 5px;
-	}
+}
+
 
 /*网站2018*/
 
@@ -93,7 +97,6 @@ h2.heading-title {
 .section-padding {
 	padding: 60px 0px;
 }
-
 
 .section-heading {
 	width: 80%;
@@ -139,7 +142,6 @@ h2.heading-title {
 	font-weight: 400;
 	padding: 14px 20px;
 	font-size: 18px;
-	font-family: 'Roboto', serif;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -272,8 +274,10 @@ h2.heading-title {
 	.swiper-button-prev {
 		background-image: none;
 	}
-	@media (min-width: 320px) and (max-width: 478px) {
-		.navbar-default .navbar-nav>li>a {
-			padding: 15px 20px;
-		}
+}
+
+@media (min-width: 320px) and (max-width: 478px) {
+	.navbar-default .navbar-nav>li>a {
+		padding: 15px 20px;
 	}
+}

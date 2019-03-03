@@ -603,9 +603,7 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/wow.min.js"></script>
-		<script src="js/jquery.singlePageNav.js"></script>
 		<script src="js/jquery.sticky.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
 		<script src="js/swiper.min.js"></script>
 
 		<script>
@@ -625,7 +623,26 @@
 					prevEl: '.swiper-button-prev',
 				},
 			});
+ 
+$(function($) {
+  "use strict";
+// $('.navigation').singlePageNav({
+//      currentClass: 'active',
+//      changeHash: true,
+//      scrollSpeed: 750,
+//      offset: 0,
+//      filter: ':not(.external)',
+//      easing: 'swing',
+//  });
 
+    $.noConflict();
+     $('.nav a').on('click', function(){ 
+        if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+        }
+    });
+});
+//返回顶部
 			function myEvent(obj, ev, fn) {
 				if(obj.attachEvent) {
 					obj.attachEvent('on' + ev, fn);
