@@ -2,6 +2,7 @@ html,
 body {
 	font-size: 100%;
 	background: #ffffff;
+	text-align: justify;
 }
 .resume .row:last-of-type{
 	margin-bottom:40px
@@ -36,6 +37,11 @@ body {
 .skill-list ul li{
 	list-style-type:disc ;
 	line-height: 32px;
+}
+.job-descrip{
+	text-align: justify;
+	border-bottom: 1px solid;
+    padding-bottom: 20px;
 }
 @media (max-width: 768px) {
 	.row{
